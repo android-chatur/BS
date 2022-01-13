@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layoutDirection="rtl"
+    android:background="@color/background_color"
+    tools:context=".UI.BecomeVisPart">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/vispart_color">
+
+        <ImageView
+            android:id="@+id/logoside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:rotation="180"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/visi_partback" />
+
+
+        <LinearLayout
+            android:id="@+id/searchcart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="0dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayouts"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/become_vis_part"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtlable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="start"
+                    android:text="حدد نوع الشريك في الرؤية"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtlable1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="نوع الشريك في الرؤية"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <Spinner
+                    android:id="@+id/id_slect_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@color/colorAccent"></View>
+
+                <LinearLayout
+                    android:id="@+id/lin_goverment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtlabl_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="أي حكومة تعمل لديها؟"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل أي حكومة تعمل لديها؟"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="اللقب"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل اللقب"
+                        android:inputType="text"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/job_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="المسمى  الوظيفي"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل المسمى الوظيفي"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                    <Button
+                        android:id="@+id/btn_uplod_goverment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/upload_btn"
+                        android:text="تحميل الشعار "
+                        android:textAllCaps="false"
+                        android:textColor="@color/buss_oner_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_des_main_goverment"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|left"
+                        android:hint="الوصف هنا ..."
+                        android:paddingLeft="10dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/public_txt_association"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="اسم الجمعية"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/public_editText_assocition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل اسم الجمعية"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/public_txt_representive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="اسم الممثل"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/public_editText_representative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="ادخِل اسم الممثل"
+                        android:inputType="text"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/public_txt_em_reprentative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="البريد الإلكتروني الخاص بالممثل"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/public_editText_emai_reprentative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="البريد الإلكتروني الخاص بالممثل"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_uplod_public"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/upload_btn"
+                        android:text="تحميل الشعار "
+                        android:textAllCaps="false"
+                        android:textColor="@color/buss_oner_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_des_main_public"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|right"
+                        android:hint="الوصف هنا ..."
+                        android:paddingLeft="10dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_main_sponser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/main_sponser_corporate_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="اسم الشركة"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/main_sponser_editText_corporate_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل اسم الشركة "
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/main_sponser_representive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="أدخِل اسم الشركة"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/main_sponser_editText_representative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="اسم الممثل"
+                        android:inputType="text"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_uploadlogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/upload_btn"
+                        android:text="قم بتحميل شعار الشركة"
+                        android:textAllCaps="false"
+                        android:textColor="@color/buss_oner_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/main_sponser_txt_dona_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="مبلغ التبرع"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/main_sponser_editText_dona_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل مبلغ التبرع"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/main_sponser_txt_mobile_nuber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="رقم الهاتف الجوال"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/main_sponser_editText_mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="أدخِل رقم الهاتف الجوال"
+                        android:inputType="phone"
+                        android:maxLength="8"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/main_sponser_txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="البريد الإلكتروني"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/main_sponser_editText_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="عنوان البريد الإلكتروني"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <Button
+                        android:id="@+id/btn_uplod_sponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/upload_btn"
+                        android:text="تحميل الشعار "
+                        android:textAllCaps="false"
+                        android:textColor="@color/buss_oner_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_des_main_sponser"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|right"
+                        android:hint="الوصف هنا ..."
+                        android:paddingLeft="10dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_land_loads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/land_loads_bulding1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="مبنى - 1"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/land_loads_editText_bulding_number1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل رقم المبنى "
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/land_loads_bulding2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="مبنى - 2"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/land_loads_editText_bulding_number2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="أدخِل رقم المبنى"
+                        android:inputType="number"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/root_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 3"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 4"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 5"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 6"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى -7"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 8"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 9"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lin_bulding10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/land_loads_bulding10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start|center"
+                                    android:text="مبنى - 10"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <EditText
+                                    android:id="@+id/land_loads_editText_bulding_number10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:ems="10"
+                                    android:gravity="start"
+                                    android:hint="أدخِل رقم المبنى"
+                                    android:inputType="number"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                    <Button
+                        android:id="@+id/btn_add_morebulding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/upload_btn"
+                        android:text="+ ضف المزيد من المباني "
+                        android:textAllCaps="false"
+                        android:textColor="@color/buss_oner_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/land_loads_txt_mobile_nuber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start|center"
+                        android:text="رقم الهاتف الجوال"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/land_loads_editText_mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="أدخِل رقم الهاتف الجوال"
+                        android:inputType="phone"
+                        android:maxLength="8"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+
+                    <Button
+                        android:id="@+id/btn_uplod_landload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/upload_btn"
+                        android:text="تحميل الشعار "
+                        android:textAllCaps="false"
+                        android:textColor="@color/buss_oner_color"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_des_land_load"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|right"
+                        android:hint="الوصف هنا ."
+                        android:paddingLeft="10dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/instagram_border_btn"
+                    android:text="احفظ"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

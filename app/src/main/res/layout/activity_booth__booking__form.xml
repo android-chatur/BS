@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".UI.Booth_Booking_Form">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/home_top">
+
+        <ImageView
+            android:id="@+id/logoside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back_white"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/logoside_sele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back_white"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/logoside1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/menu"
+            android:visibility="gone"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayouts"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logosid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/verticle_image"
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/lin_booth_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aboutbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:text="Book your Booth"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/twitter_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/home_logo_well" />
+
+
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:text="First Name*"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_volun_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your First Name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Last Name*"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your Latname"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Phone Number*"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your Phone Number"
+                        android:inputType="phone"
+                        android:maxLength="8"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Email Address"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your Email Address"
+                        android:inputType="textEmailAddress"
+
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="You are requesting to reserve a booth for the Kuwait Eid Wahda Event*"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_fr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="By clicking Yes, you are confirming your commitment to the details of the event mentioned above. Event Duration: 5 days"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/tems_cond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:button="@drawable/custom_checkbox"
+                            android:gravity="center"
+                            android:padding="5dp"
+
+                            android:text="I confirm my commitment to all of the above"
+                            android:textSize="14dp"
+
+                            />
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/trm_txt"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:paddingTop="25dp"-->
+                        <!--                                android:paddingBottom="0dp"-->
+                        <!--                                android:checked="false"-->
+                        <!--                                android:textSize="16dp"-->
+                        <!--                                android:text="I agree to term &amp; conditions"-->
+                        <!--                                android:drawableLeft="@drawable/blank_circle2"-->
+                        <!--                                android:drawablePadding="10dp"/>-->
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_fro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Nature of the Company:*"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_nbuss"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter Nature of the Company"
+                        android:inputType="text"
+
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_lic_n0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="If you are a business, please provide
+your license number*"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_lice_n0"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter Licensce Number"
+                        android:inputType="text"
+
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/tet_lic_n0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="If you are an individual, please provide
+Civil ID Number:*"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_civil_n0"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter Civil ID"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tet_lic_need"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="What kind of booth(s) do you need? *"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/view_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="View Image"
+                            android:textColor="@color/vispart_color"
+                            android:textSize="16dp"
+                            android:textStyle="normal" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+
+                            <CheckBox
+                                android:id="@+id/booth_block"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="7dp"
+                                android:button="@drawable/custom_checkbox"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Booth Block (3m x 3m)"
+                                android:textSize="14dp"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_background"
+
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+
+                            <CheckBox
+                                android:id="@+id/Market_Booth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="7dp"
+                                android:button="@drawable/custom_checkbox"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Market Booth (2.5m x 3m)"
+                                android:textSize="14dp"
+
+                                />
+
+                            <!--                            <TextView-->
+                            <!--                                android:id="@+id/trm_txt"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:paddingTop="25dp"-->
+                            <!--                                android:paddingBottom="0dp"-->
+                            <!--                                android:checked="false"-->
+                            <!--                                android:textSize="16dp"-->
+                            <!--                                android:text="I agree to term &amp; conditions"-->
+                            <!--                                android:drawableLeft="@drawable/blank_circle2"-->
+                            <!--                                android:drawablePadding="10dp"/>-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_background"
+
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+
+                            <CheckBox
+                                android:id="@+id/Both"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="7dp"
+                                android:button="@drawable/custom_checkbox"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Both"
+                                android:textSize="14dp"
+
+                                />
+
+                            <!--                            <TextView-->
+                            <!--                                android:id="@+id/trm_txt"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:paddingTop="25dp"-->
+                            <!--                                android:paddingBottom="0dp"-->
+                            <!--                                android:checked="false"-->
+                            <!--                                android:textSize="16dp"-->
+                            <!--                                android:text="I agree to term &amp; conditions"-->
+                            <!--                                android:drawableLeft="@drawable/blank_circle2"-->
+                            <!--                                android:drawablePadding="10dp"/>-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_select_booth_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/select_booth_drawable"
+                        android:text="Select Booth Type / Location"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/text_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="How many Booth Blocks will you need? *"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/view_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="View Image"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_frid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="You will receive the booth empty If you
+would need us to provide you with a
+table(s) and/or chair(s), kindly mention
+in the appropriate questions below."
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+
+                    <EditText
+                        android:id="@+id/editText_both_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your answer"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_booth_need"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="How many Market Booths will you need? *"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/view_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="View Image"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_fr_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="You will receive the booth empty If you
+would need us to provide you with a
+table(s) and/or chair(s), kindly mention\nin the appropriate questions below."
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+
+                    <EditText
+                        android:id="@+id/editText_both"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your answer"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_provide_need"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="If you wish for us to provide you with a table(s), please show the amount that you will need."
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Rent  1 table: KWD 10 per table for 5 days"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editText_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your answer"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_provide_need_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="If you wish for us to provide you with a chair(s), please show the amount that you will need.*"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_rent_chair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Rent 1 chair: KWD 5 for 5 days"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editText_rent_chair"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your answer"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_subject_avai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:visibility="gone"
+                        android:text="Please select the  location of the booth you wish to reserve by indicating the number(s) of the booth(s) below *"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/view_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="View Image"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_rent_pirple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:visibility="gone"
+                        android:text="Purple: Booth Block (Priority to Sponsors) - 3m x 3m / Yellow: Booth Block - 3m x 3m / Green: Market Booth - 2.5m x 3m (Table)"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editText_pirple"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:visibility="gone"
+                        android:gravity="start|center"
+                        android:hint="Purple: Booth Block (Priority to Sponsors)"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_identifi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Please identify any high-electricity consumption equipment you will need"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+
+
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rw_electricity_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:scrollbars="none"
+
+                            />
+
+                        <CheckBox
+                            android:id="@+id/Fridge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:button="@drawable/custom_checkbox"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Fridge"
+                            android:textSize="14dp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/editText_type_here"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@null"
+                                android:ems="10"
+                                android:gravity="start|center"
+                                android:hint="type here.."
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_instagram_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="What is Your Company's Instagram Account *"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/editText_insta_acoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="Enter your answer"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/procee1d"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/supplier"
+                        android:gravity="center"
+                        android:text="Submit and Proceed"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_booth_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aboutbs_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:text="Booth Selection"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/view_map_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="View Event Map here"
+                        android:textColor="@color/vispart_color"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rw_selectboot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+
+                        />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/black">
+
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/select_booth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start"
+                        android:text="Please Select Booth"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_booth_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/mem_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="start"
+                                android:text="Booth A\nBlock(3m x 3m)"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:text="4000.00 KD"
+                                android:textColor="@color/vispart_color"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:background="@color/thincolcor">
+
+                        </View>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rw_zonea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+
+                            />
+                    </LinearLayout>
+                    //block b
+
+                    <LinearLayout
+                        android:id="@+id/lin_zone_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txt_booth_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="start"
+                                android:text="Booth B\nBlock(3m x 3m)"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/price_booth_b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:text="100.00 KD"
+                                android:textColor="@color/vispart_color"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@color/thincolcor">
+
+                        </View>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rw_zoneb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/proceed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/supplier"
+                        android:gravity="center"
+                        android:text="Proceed"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

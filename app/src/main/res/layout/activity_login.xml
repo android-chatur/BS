@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".UI.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/side">
+
+        <ImageView
+            android:id="@+id/logoside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/drawer" />
+
+        <ImageView
+            android:id="@+id/img_change_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/menu"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/searchcart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="0dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayouts"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayouts"
+            android:layout_marginBottom="9dp">
+
+            <LinearLayout
+                android:id="@+id/l_layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/twitter_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/txtlable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:gravity="start|center"
+                    android:text="Log in to continue."
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/emal_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|center"
+                    android:text="Email."
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editText_email_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+
+                    android:gravity="start"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/pass_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|center"
+                    android:text="Password."
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edit_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/txtForgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end|center"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/instagram_border_btn_2"
+                    android:text="Log In"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtlable2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start|center"
+                    android:text="Or log in with ."
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/socilamedia2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/facbook1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/facebook"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/facebook" />
+
+                        <!--   <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                               android:id="@+id/twitterLoginButton"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentBottom="true"
+                               android:layout_centerHorizontal="true"
+                               android:layout_centerVertical="true"
+                               android:visibility="gone" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="BtnLoginWithTwitterClicked"
+
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/twitter_log"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/twitter" />
+                        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                            android:id="@+id/twitterLoginButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                        <!--   <com.facebook.login.widget.LoginButton
+                               android:id="@+id/loginButton"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_horizontal"
+                               android:layout_marginTop="30dp"
+                               android:layout_marginBottom="30dp"
+                               android:visibility="gone" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/google"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="BtnLoginWithGooglerClicked"
+                        android:layout_weight="1"
+
+                        tools:ignore="OnClick"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/google_"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/search" />
+
+                           <com.google.android.gms.common.SignInButton
+                               android:id="@+id/sign_in_button"
+                               android:layout_width="fill_parent"
+                               android:layout_height="40dp"
+                               android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/socilamedia2"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/thincolcor" />
+
+
+                <TextView
+                    android:id="@+id/text_sigup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|center"
+                    android:text="Not a member? Sign Up"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/yyuu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/twitter_log3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:src="@drawable/corp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

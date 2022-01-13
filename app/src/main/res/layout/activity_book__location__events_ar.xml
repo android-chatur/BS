@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_gravity="center"
+    android:background="@color/white1"
+    tools:context=".UI.Book_Location_Events">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/home_top">
+
+        <ImageView
+            android:id="@+id/logoside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:rotation="180"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back_white"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/logoside1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/menu"
+            android:visibility="gone"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayouts"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logosid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/verticle_image"
+
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLogin"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/drawer_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_image_buss_oner"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/aboutbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:text="موقع الكتاب لهذا الفعالية الخاص بك"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/twitter_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/home_logo_well" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_newpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/txt_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:text="نوع الفعالية"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/edittext_background"
+                        >
+                    <Spinner
+                        android:id="@+id/spi_event_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="أدخل رقم الأكشاك"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rw_Booth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none"
+
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_select_zones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="حدد مناطق لحجم الفعالية"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rw_selectzone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+
+                        />
+
+
+                    <Spinner
+                        android:id="@+id/spi_booth_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/txt_age"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="start"
+                                android:text="Event Size"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="normal"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/editText_age"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edittext_background"
+                                android:ems="10"
+                                android:gravity="start|center"
+
+                                android:hint="Enter Event Size"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/txt_voluntee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="start"
+                                android:text="أدخِل الأيام للفعالي"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/editText_events_days"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edittext_background"
+                                android:ems="10"
+                                android:gravity="start|center"
+                                android:hint="5"
+                                android:inputType="number"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="حدد تاريخ"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_fdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:gravity="right|center"
+                        android:paddingRight="10dp"
+                        android:text="25 sept 2021"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="تاريخ الانتهاء"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_todate"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:gravity="right|center"
+
+                        android:paddingRight="10dp"
+                        android:text="25 sept 2021"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_Event_Size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="حدد"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:checked="true"
+                            android:gravity="start|center"
+                            android:padding="10dp"
+                            android:paddingRight="15dp"
+                            android:text="Full Street (500M)"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal"
+                            android:visibility="gone">
+
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:checked="false"
+                            android:gravity="start|center"
+                            android:padding="10dp"
+                            android:paddingRight="15dp"
+                            android:text="Quarter Size (50M)"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal"
+                            android:visibility="gone">
+
+                        </RadioButton>
+
+
+                        <TextView
+                            android:id="@+id/txt_mobile_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="start"
+                            android:text="رقم جوال مخطط الفعالية."
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/editText_mobile_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:ems="10"
+                            android:gravity="right|center"
+                            android:hint="أدخِل رقم الهاتف الجوال"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="start"
+                            android:text="معرف البريد الإلكتروني لمخطط الفعالية"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/editText_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+
+                            android:gravity="right|center"
+                            android:hint="عنوان البريد الإلكتروني"
+                            android:inputType="textEmailAddress"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bussine_drawable"
+                            android:orientation="horizontal"
+                            android:padding="6dp">
+
+
+                            <TextView
+                                android:id="@+id/mont_instalment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="start"
+                                android:padding="5dp"
+                                android:text="سعر"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:id="@+id/_instalment_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Nationality"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+
+                    <Spinner
+                        android:id="@+id/id_nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="رقم الحساب المصرفي الدولي "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/editText_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="أدخِل رقم الحساب المصرفي الدولي "
+                        android:inputType="text"
+
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rw_checkbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:scrollbars="none"
+
+                            />
+
+                        <CheckBox
+                            android:id="@+id/tems_cond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/colorAccent"
+                            android:button="@drawable/custom_checkbox"
+                            android:buttonTint="@color/colorAccent"
+                            android:gravity="start|center"
+                            android:padding="5dp"
+
+                            android:text=" I Agree to the Membership Terms &amp; Conditions"
+                            android:textSize="15dp"
+                            android:visibility="gone"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_tc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="شروط وأحكام"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_ptem_con"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:gravity="right"
+                        android:text="https://cubical-mysharepoint.com/:p:/g/
+personal/aalfawaz_cubicalservices com/
+EalGtsneudlMkHi83cHO xwBtfYUaBNfmo
+DkYwkNznsQPw?e=znmoeP"
+                        android:textColor="@color/food_retail"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/proceed"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/book_now"
+                        android:text="احجز الآن"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

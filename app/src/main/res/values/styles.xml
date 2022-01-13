@@ -1,0 +1,74 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="OurAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--  <item name="android:background">#5fa3d0</item>-->
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/openans</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+
+        <item name="textAllCaps">false</item>
+
+    </style>
+    <style name="MyCustomTabText_" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17dp</item>
+        <item name="android:fontFamily">@font/openans</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="textAllCaps">false</item>
+
+    </style>
+
+
+    <style name="MyCustomTabText_ar" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/frutiger</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="textAllCaps">false</item>
+
+    </style>
+    <style name="MyCustomTabText_ar_" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/frutiger</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="textAllCaps">false</item>
+
+    </style>
+
+
+    <style name="customRatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/gray_text</item>
+        <item name="colorControlActivated">#ffc324</item>
+        <item name="android:color">@color/Orange</item>
+    </style>
+
+    <style name="MaterialDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+</resources>

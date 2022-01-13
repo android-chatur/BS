@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.example.barayihsalem.Helper.RoundRectCornerImageView
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/minus"></com.example.barayihsalem.Helper.RoundRectCornerImageView>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start|center"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <com.example.barayihsalem.UI.View.TextViewRegular
+                    android:id="@+id/productname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="2dp"
+                    android:maxLines="2"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:text="Turkish Grills"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.example.barayihsalem.UI.View.TextViewRegular
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:text="15.205 KD"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_qnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="visible"
+
+                >
+
+                <!--  <ImageView
+                      android:id="@+id/imgMinus"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="8dp"
+                      android:background="@drawable/circle"
+                      android:layout_marginRight="8dp"
+
+                      android:src="@drawable/minus"></ImageView>-->
+
+                <ImageView
+                    android:id="@+id/imgMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/minus_"
+                    android:textColor="@color/black"></ImageView>
+
+                <com.example.barayihsalem.UI.View.TextViewRegular
+                    android:id="@+id/countnolable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/plus_"
+                    android:textColor="@color/black"></ImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/indus_color">
+
+    </View>
+
+
+</LinearLayout>

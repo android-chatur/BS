@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Barayih Salem</string>
+    <string name="PARSE_APP_ID" />
+
+    <string name="your_string_here"> &lt;u>View Image&lt;/u>.</string>
+    <string name="your_string_here_"> &lt;u>View Event Map here&lt;/u>.</string>
+    <string name="GetMainurl">https://api.barayihsalem.com/api/BS/getData_JSON/</string>
+    <string name="Imageurl">https://api.barayihsalem.com/Upload/Banner_Welcome/</string>
+    <string name="Banner_Common">https://api.barayihsalem.com/Upload/Banner_Common/</string>
+    <string name="Imageurl_bsnews">https://api.barayihsalem.com/Upload/BS_News/</string>
+    <string name="Imageurl_category">https://api.barayihsalem.com/Upload/AdminEntries/</string>
+    <string name="Imageurl_Cuisines">https://api.barayihsalem.com/Upload/Cuisines/</string>
+    <string name="ItemCard">https://api.barayihsalem.com/Upload/ItemCard/</string>
+    <string name="Banner_Category">https://api.barayihsalem.com/Upload/Banner_Category/</string>
+    <string name="Sector">https://api.barayihsalem.com/Upload/Sector/</string>
+    <string name="Store">https://api.barayihsalem.com/Upload/Store/</string>
+    <string name="Brand">https://api.barayihsalem.com/Upload/Brand/</string>
+    <string name="Events_Gallery">https://api.barayihsalem.com/Upload/Events_Gallery/</string>
+    <string name="Imageurl_eventapproval">https://api.barayihsalem.com/Upload/Event_Approval/</string>
+
+<!--//twitter-->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">ivzAqVUG7q6I8h9R6HHtsL2Vt</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">1ccNlroop2fD6mB2PecBdVHQCPMHpXyqmhvyLYh4oiJ6It5yEY</string>
+
+</resources>

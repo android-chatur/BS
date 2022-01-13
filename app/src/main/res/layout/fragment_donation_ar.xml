@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_donation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_full_name_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:text="اسم الشخص المُصرح له"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/editText_volun_name_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:gravity="start|center"
+                    android:hint="أدخِل اسم الشخص المُصرح له"
+                    android:inputType="text"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/txt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="الجنس"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radio_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:checked="true"
+                            android:gravity="start|center"
+                            android:paddingRight="15dp"
+                            android:text="ذكر"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_background"
+                            android:checked="false"
+                            android:gravity="start|center"
+                            android:paddingLeft="15dp"
+                            android:text="أنثى"
+
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal">
+
+                        </RadioButton>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_nationality_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="الجنسية"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+
+                <Spinner
+                    android:id="@+id/id_nationality_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_age_do"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="السن"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/editText_age_do"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:ems="10"
+                            android:gravity="start|center"
+                            android:hint="25"
+                            android:inputType="number"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_voluntee_do"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="التطوُّع في"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/id_valunteer_do"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:spinnerMode="dialog"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_fdate_"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="From Date"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_fdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:text="25/03/2021"
+                            android:background="@drawable/edittext_background"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="normal" />
+                        <!--
+                                                <EditText
+                                                    android:id="@+id/editText_age"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="40dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="5dp"
+                                                    android:background="@drawable/edittext_background"
+                                                    android:ems="10"
+                                                    android:gravity="start|center"
+                                                    android:hint="25"
+                                                    android:inputType="text"
+                                                    android:paddingLeft="10dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="15dp" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_todate_"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="To Date"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_todate"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:text="25/06/2021"
+                            android:background="@drawable/edittext_background"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_phone_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="رقم الهاتف الجوال."
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/editText_mobile_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:gravity="right|center"
+                    android:hint="أدخِل رقم الهاتف الجوال"
+                    android:inputType="phone"
+                    android:maxLength="8"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="تبرع"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+
+              <!--  <Spinner
+                    android:id="@+id/sp_donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp" />-->
+
+                <EditText
+                    android:id="@+id/editText_donate_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:gravity="right|center"
+                    android:hint="تبرع"
+                    android:inputType="text"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/proceed_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="250dp"
+                    android:background="@drawable/bussine_drawable"
+                    android:text="أرسل"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

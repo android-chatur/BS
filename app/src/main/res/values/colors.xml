@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e8412e</color>
+    <color name="colorPrimaryDark">#e8412e</color>
+    <color name="colorAccent">#0072bc</color>
+    <color name="side">#e8412e</color>
+    <color name="thincolcor">#DDDDDD</color>
+    <color name="background_color">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="all_commu">#fef4b1</color>
+    <color name="indus_color">#88828d</color>
+    <color name="enviro_color">#97d700</color>
+    <color name="white1">#ECE6E6</color>
+    <color name="black">#000000</color>
+    <color name="offblack">#666666</color>
+    <color name="skipcolor">#D2002E</color>
+    <color name="lang1">#c6502c</color>
+    <color name="lang11">#fedd00</color>
+    <color name="lang2">#071520</color>
+    <color name="rating_cokor">#ff9500</color>
+    <color name="for_back">#f2f2f2</color>
+    <color name="for_notify">#4cab51</color>
+    <color name="grayv">#8e8e93</color>
+    <color name="pink">#e83e8c</color>
+    <color name="button_color">#e8412e</color>
+    <color name="vispart_color">#41b6e6</color>
+    <color name="vispart_color_">#0057b8</color>
+    <color name="button_color_signup">#afcb08</color>
+    <color name="bussi_retail">#fedd00</color>
+    <color name="fb_color">#ff9800</color>
+    <color name="food_retail">#ec008c</color>
+    <color name="vis_part_commu_color">#c4e8f5</color>
+    <color name="hinh_color">#333333</color>
+    <color name="tab_color">#3F51B5</color>
+    <color name="offwhite">#cccccc</color>
+    <color name="reject_color">#f93822</color>
+    <color name="buss_oner_color">#0057b8</color>
+    <color name="supplier_color">#833ded</color>
+
+    <color name="supplier_color_new">#e7dcfc</color>
+    <color name="food_beve_color">#f2a900</color>
+    <color name="supplier_text_color">#fff200</color>
+    <color name="recident_color">#797d83</color>
+    <color name="tq_color">#2ad2c9</color>
+    <color name="home_bussi_owner_color">#d9e4f0</color>
+    <color name="Orange">#FB9E23</color>
+    <color name="gray_text">#868686</color>
+    <color name="gray_text1">#f93822</color>
+    <color name="bokklio">#05164D</color>
+    <color name="forgot_sub">#707070</color>
+
+    <color name="radio_b_color">#3262cf</color>
+    <color name="Dull_White">#EFEFEF</color>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#80000000"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayouts"
+        android:background="@drawable/button_rounded_corner_whitebg_twenty_radious"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.75"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aboutbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:text="Cash Settlements"
+                    android:textColor="@color/buss_oner_color"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/twitter_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/bussiness_owner" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/some_descri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:text="Some Description here and also what he we get \n1\n2\n3\n4\n5"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                 android:textSize="18dp"
+                android:textStyle="normal" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_rounded_corner_whitebg_ten_radious"
+                android:orientation="vertical"
+                tools:ignore="NotSibling,UnknownId">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="start"
+                    android:text="Balance Amount"
+                    android:textColor="@color/black"
+                     android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvmycarttotalvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="24.000 KD"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="10"
+                android:background="@drawable/bussine_drawable"
+                android:onClick="BtnMyCartProceedToPaymentClicked"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                 android:textSize="18dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--</LinearLayout>-->
+
+

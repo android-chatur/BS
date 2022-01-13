@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layoutDirection="rtl"
+    android:background="@color/white"
+    tools:context=".UI.Enter_Address">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/home_top">
+
+
+        <ImageView
+            android:id="@+id/logoside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:rotation="180"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/back_white"
+
+
+            />
+        <TextView
+            android:id="@+id/txtlab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="طعام
+"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnLogin"
+        android:layout_below="@+id/topLayouts"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/topLay"
+                android:layout_above="@+id/radioGroup"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/bacck"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/search_1"
+                                android:layout_alignParentLeft="true"
+                                app:tint="@color/black">
+
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/bacck"
+                                android:background="@color/white">
+
+                                <EditText
+                                    android:id="@+id/edtSearch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="center_vertical"
+                                    android:hint="ابحث عن المنتج
+"
+                                    android:imeOptions="actionSearch"
+                                    android:inputType="text"
+                                    android:paddingRight="15dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/offwhite"
+                                    android:textSize="16dp">
+                                    <requestFocus />
+                                </EditText>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/proi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/location"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="0.25"
+
+                                android:layout_marginLeft="5dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tx_cy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:layout_gravity="bottom"
+                                    android:visibility="visible"
+                                    android:text="موقعك
+"
+                                    android:textColor="@color/black"
+                                    android:textStyle="normal"
+                                    android:layout_marginBottom="7dp"
+                                    android:textSize="12sp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tx_cate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="7dp"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/tx_cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.75"
+                                android:singleLine="false"
+                                android:visibility="visible"
+                                android:text="تغيير"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="7dp"
+
+                                android:textSize="16sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/asd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/topLay"
+                            android:layout_marginRight="5dp"
+
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/imageSliderr"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/home"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                app:cardCornerRadius="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.viewpager.widget.ViewPager
+                                        android:id="@+id/pager"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="true" />
+
+
+                                    <com.smarteist.autoimageslider.IndicatorView.PageIndicatorView
+                                        android:id="@+id/indicator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:gravity="bottom"
+                                        android:padding="10dip"
+                                        app:piv_radius="3dp"
+
+                                        app:tabIndicatorColor="@color/black"
+                                        android:visibility="visible"/>
+                                    <!-- <me.relex.circleindicator.CircleIndicator
+                                         android:id="@+id/indicator"
+                                         android:layout_width="match_parent"
+                                         android:layout_height="48dp"
+                                         android:layout_alignParentBottom="true"/>-->
+                                </RelativeLayout>
+
+                                <com.smarteist.autoimageslider.SliderLayout
+                                    android:id="@+id/imageSlider"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:visibility="gone" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_above="@+id/radioGroup"
+                             android:layout_below="@+id/asd"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginBottom="5dp"
+                             android:orientation="vertical">
+
+
+                             <androidx.recyclerview.widget.RecyclerView
+                                 android:id="@+id/rv_list"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:nestedScrollingEnabled="false"
+
+                                 />
+
+                         </LinearLayout>-->
+
+                        <LinearLayout
+                            android:id="@+id/ofrs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="visible"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/feExpert"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/ofrsss"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.3"
+                                    android:gravity="start"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/offers"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="start"
+                                        android:text="مطابخ"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="normal" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lin_seeall_Cuisine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.7"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/iv_all"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="left"
+                                        android:text="يرى الكل"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="normal" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_all1"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="0dp"
+                                        android:gravity="center"
+                                        android:tint="@color/thincolcor"
+                                        android:rotation="90"
+                                        android:src="@drawable/down_arrow"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/offersss_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="5dp"
+                                    android:clipToPadding="false"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/restarunt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="visible"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/feExpert"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/ofr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.3"
+                                    android:gravity="start"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/offers_"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="start"
+                                        android:text="مطعم متميز"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="normal" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/see_alRasta"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.7"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/see_all"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="left"
+                                        android:text="يرى الكل"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="normal" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_all"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="0dp"
+                                        android:gravity="center"
+                                        android:rotation="90"
+                                        android:src="@drawable/down_arrow"
+                                        app:tint="@color/thincolcor" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/offersss_list_re"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_list_resu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="5dp"
+
+                                    android:clipToPadding="false"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

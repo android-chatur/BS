@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="تفاصيل العضوية"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="العضوية الذهبية هي مجرد دمية في صناعة الطباعة والتنضيد. لقد كان  هو النص الوهمي للصناعات منذ القرن الخامس عشر الميلادي عندما أخذت طابعة غير معروفة مجموعة من النوع وتدافعت"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/benefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+
+            android:text="المزايا:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/benefit_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="1)جلسة تصوير مجانية\n\n2)تجارة إلكترونية مجانًا لمدة عام\\n/n3)تجارة إلكترونية مجانًا لمدة عام."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

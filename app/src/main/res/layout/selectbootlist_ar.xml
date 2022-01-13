@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_boot_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+
+
+
+        <CheckBox
+            android:id="@+id/booth_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+
+            android:button="@drawable/custom_checkbox"
+            android:buttonTint="@color/colorAccent"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="   Booth A (Block 3m x 3m"
+            android:textSize="16dp"
+
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/view_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="عرض الصورة"
+        android:textColor="@color/vispart_color"
+        android:textSize="16dp"
+        android:textStyle="normal" />
+
+</LinearLayout>

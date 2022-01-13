@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.barayihsalem">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".Helper.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UI.Event_Details"></activity>
+        <activity android:name=".UI.BoothBookingPayment" />
+        <activity android:name=".UI.Success_BoothBookingPage" />
+        <activity android:name=".UI.UpcominiEvent_Download" />
+        <activity android:name=".UI.Success_SupplierPage" />
+        <activity android:name=".UI.Payment_Activity_Supplier" />
+        <activity android:name=".UI.Success_CommuPage" />
+        <activity android:name=".UI.Payment_Activity" />
+        <activity android:name=".UI.Terms_of_Use" />
+        <activity android:name=".UI.BSNews_Activity_Details" />
+        <activity android:name=".UI.All_Retails" />
+        <activity android:name=".UI.Language_Selection" />
+        <activity android:name=".UI.AccomedationActivity" />
+        <activity android:name=".UI.Booth_PastiEvent_Details" />
+        <activity android:name=".UI.Booth_UpcominiEvent_Details" />
+        <activity android:name=".UI.UpcominiPastEvent_Details" />
+        <activity android:name=".UI.UpcominiEvent_Details" />
+        <activity android:name=".UI.BecomePassionate_Visitor" />
+        <activity android:name=".UI.Create_Booth_Slot" />
+        <activity android:name=".UI.Commu_Success" />
+        <activity android:name=".UI.Select_Payment_supplierActivity" />
+        <activity android:name=".UI.Success_Page" />
+        <activity android:name=".UI.Forgot_Password" />
+        <activity android:name=".UI.Membership_Pay" />
+        <activity android:name=".UI.Adjust_Membership" />
+        <activity android:name=".UI.Pay_Success_Page" />
+        <activity android:name=".UI.Select_Payment_Type" />
+        <activity android:name=".UI.Select_MemberShip_Type" />
+        <activity android:name=".UI.Retail_Dish_Detail_Activity" />
+        <activity android:name=".UI.Menu_Reatil_Activity" />
+        <activity android:name=".UI.Brand_Page_Activity" />
+        <activity android:name=".UI.Retails_Details" />
+        <activity android:name=".UI.Reatils_Sub_Category_Page" />
+        <activity android:name=".UI.Rating_Activity" />
+        <activity android:name=".UI.Acount_Info" />
+        <activity android:name=".UI.Notification_Activity" />
+        <activity android:name=".UI.Reatils_category_page" />
+        <activity android:name=".UI.Grocery_Activity" />
+        <activity android:name=".UI.Checkout_Activity" />
+        <activity android:name=".UI.Dish_Detail_Activity" />
+        <activity android:name=".UI.Search_Shopping" />
+        <activity android:name=".UI.Menu_Activity" />
+        <activity android:name=".UI.Restaurant_Details" />
+        <activity android:name=".UI.Filter_Activity" />
+        <activity android:name=".UI.Restaurant_activity" />
+        <activity android:name=".UI.All_Food" />
+        <activity android:name=".UI.Food_Activity" />
+        <activity android:name=".UI.Shopping_Category_page" />
+        <activity android:name=".UI.Enter_Address" />
+        <activity android:name=".UI.Booth_Booking_Success" />
+        <activity android:name=".UI.Booth_Booking_Form" />
+        <activity android:name=".UI.Booth_Event_Activity" />
+        <activity android:name=".UI.Technology_Commu" />
+        <activity android:name=".UI.Creative_Commu" />
+        <activity android:name=".UI.Industrial_Commu" />
+        <activity android:name=".UI.Enviromental_commu" />
+        <activity android:name=".UI.Food_Beverages" />
+        <activity android:name=".UI.Service_Details" />
+        <activity android:name=".UI.BuusiAndRetails" />
+        <activity android:name=".UI.Gallery_Commu" />
+        <activity android:name=".UI.Initiaves_FromYou" />
+        <activity android:name=".UI.Opportunity_ForYou" />
+        <activity android:name=".UI.Create_Events" />
+        <activity android:name=".UI.Comming_Events" />
+        <activity android:name=".UI.Entertainment_Community" />
+        <activity android:name=".UI.Pri_Policy" />
+        <activity android:name=".UI.About_App" />
+        <activity android:name=".UI.Suggestion" />
+        <activity android:name=".UI.FAQ_Activity" />
+        <activity android:name=".UI.Reach_Us_help" />
+        <activity android:name=".UI.Shoping_Offer" />
+        <activity android:name=".UI.Service_Offers" />
+        <activity android:name=".UI.Offer_Activity" />
+        <activity android:name=".UI.Setting_Activity" />
+        <activity android:name=".UI.Older_Events_Gallary" />
+        <activity android:name=".UI.Registered_Event" />
+        <activity android:name=".UI.Book_Location_Events" />
+        <activity android:name=".UI.Events_activity" />
+        <activity android:name=".UI.Benfit_Rewardss_Club" />
+        <activity android:name=".UI.Communities_Club" />
+        <activity android:name=".UI.Membership_Club" />
+        <activity android:name=".UI.Sustainability" />
+        <activity android:name=".UI.Priorities_Of_BS" />
+        <activity android:name=".UI.Principle_Of_BS" />
+        <activity android:name=".UI.GoalsOfClub" />
+        <activity android:name=".UI.What_is_Club" />
+        <activity android:name=".UI.AboutBSClub" />
+        <activity android:name=".UI.Engi_BS" />
+        <activity android:name=".UI.What_Dose_BS" />
+        <activity android:name=".UI.Operator_Of_BS" />
+        <activity android:name=".UI.Owner_Of_BS" />
+        <activity android:name=".UI.Where_Is_BS" />
+        <activity android:name=".UI.What_is_BS" />
+        <activity android:name=".UI.About_Bs" />
+        <activity android:name=".UI.BecomeSupplier" />
+        <activity android:name=".UI.Supplier_" />
+        <activity android:name=".UI.Passionate_Volunteering" />
+        <activity android:name=".UI.Passionate_Visitor" />
+        <activity android:name=".UI.Resi_Volunteering" />
+        <activity android:name=".UI.Seek_a_job" />
+        <activity android:name=".UI.BecomeResident_member" />
+        <activity android:name=".UI.Resident" />
+        <activity android:name=".UI.BO_Volunteering_Donation" />
+        <activity android:name=".UI.BO_Registered_services" />
+        <activity android:name=".UI.BO_BootYourSales" />
+        <activity android:name=".UI.Success_Shopping_Page" />
+        <activity android:name=".UI.Checkout_Shopping" />
+        <activity android:name=".UI.ShoppingCheckout" />
+        <activity android:name=".UI.Cart_Activity" />
+        <activity android:name=".UI.BecomeBussiness_Owner" />
+        <activity android:name=".UI.Bussiness_Owner" />
+        <activity android:name=".UI.VP_RequestingyourSupport" />
+        <activity android:name=".UI.VP_ReqintialAproval" />
+        <activity android:name=".UI.All_Vision" />
+        <activity android:name=".UI.Shopping_Activity" />
+        <activity android:name=".UI.Booth_Activity" />
+        <activity android:name=".UI.BSNews_Activity" />
+        <activity android:name=".UI.DraweActivity" />
+        <activity android:name=".UI.BecomeVisPart" />
+        <activity android:name=".UI.VisionPartner" />
+        <activity android:name=".UI.WellcomefamilyPage" />
+        <activity android:name=".UI.Signup_Activity" />
+        <activity android:name=".UI.LoginActivity" />
+        <activity android:name=".UI.HomeActivity" />
+
+
+
+
+
+        <activity android:name=".SpashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
